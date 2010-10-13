@@ -25,8 +25,8 @@ class ScoutScout::Descriptor < Hashie::Mash
   end
 
   # @return [ScoutScout::Metric]
-  def maximum(opts = {})
-    ScoutScout::Cluster.maximum(name, options_for_relationship(opts))
+  def minimum(opts = {})
+    ScoutScout::Cluster.minimum(name, options_for_relationship(opts))
   end
 
 protected
